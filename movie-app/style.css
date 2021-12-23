@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #2b2f57;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+main{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header{
+    background-color: #373b69;
+    padding: 1rem;
+    display: flex;
+    font-size: 1rem;
+    justify-content:flex-end;
+}
+.search{
+    color:#d4d4e7;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    border-radius:50px;
+    background-color: transparent;
+    border: 2px solid #1e2038;
+
+}
+.search::placeholder{
+    color:#7d7d8a;
+}
+.search:focus{
+    background-color: #2b2f57;
+    outline: none;
+}
+
+.movie{
+    
+    position: relative;
+    overflow: hidden;
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    width: 300px;
+    margin:1rem;
+ 
+}
+.movie img{
+    width: 100%;
+}
+.movie-info{
+    display:flex;
+    justify-content: space-between;
+    color: #eee;
+    padding:0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+    align-items: center;
+}
+.movie-info h3{
+    margin: 0;
+}
+.movie-info span{
+    background-color: #2b2f57;
+    border-radius: 3px;
+    font-weight: bold;
+    padding:0.25rem 0.5rem;
+}
+.movie-info span.green{
+    color: green;
+}
+
+.movie-info span.orange{
+    color:orange;
+}
+
+.movie-info span.red{
+    color:red;
+}
+.overview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #717599;
+    padding: 1.1rem;
+    transform: translateY(100%);
+    max-height: 100%;
+    overflow: auto;
+    transition: transform 0.3s ease-in;
+ 
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+    
+}
+.overview h4{
+    margin-top: 0;
+}
+.footer{
+ 
+    background-color: #373b69;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    margin-top: 25px;
+}
+.p{
+
+    color: #d4d4e7;
+    font-size: 1rem;
+}
